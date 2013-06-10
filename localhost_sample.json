@@ -1,0 +1,8 @@
+{ 
+  "home" : "/home/vagrant",
+  "owner" : "vagrant",
+  "group" : "vagrant",
+  "run_list" : [
+    "recipe[set_gitconfig]"
+  ]
+}
