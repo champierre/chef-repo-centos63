@@ -15,6 +15,6 @@ bash "install-rvm" do
   code <<-EOC
     LANG=ja_JP.UTF-8
     LC_ALL=ja_JP.UTF-8
-    curl -L https://get.rvm.io | bash -s stable --rails
+    curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby=1.9.3
   EOC
 end
