@@ -9,6 +9,7 @@
 
 ["mysql-server", "mysql", "mysql-devel"].each do |package_name|
 	package package_name do
+		version node['mysql']['version']
 		action :install
 	end
 end
