@@ -10,15 +10,6 @@
 include_recipe 'yum::epel'
 
 # Install dependencies
-cookbook_file "/tmp/libgd2-2.0.33-2_11.el6.x86_64.rpm" do
-  mode 00644
-end
-
-package "libgd" do
-  action :install
-  source "/tmp/libgd2-2.0.33-2_11.el6.x86_64.rpm"
-end
-
 cookbook_file "/tmp/gd-2.0.35-11.el6.x86_64.rpm" do
   mode 00644
 end
