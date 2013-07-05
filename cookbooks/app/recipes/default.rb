@@ -8,15 +8,15 @@
 #
 
 directory "#{node['app']['parent_folder']}/#{node['app']['name']}_releases" do
-  user node['user']
+  owner node['user']
   group node['group']
-  mode '775'
+  mode '0775'
   action :create
 end
 
 directory "#{node['app']['parent_folder']}/shared" do
-  user node['user']
+  owner node['user']
   group node['group']
-  mode '775'
+  mode '0775'
   action :create
 end
