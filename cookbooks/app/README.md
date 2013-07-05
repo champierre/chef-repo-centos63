@@ -1,4 +1,4 @@
-nfmdb Cookbook
+app Cookbook
 ==============
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - nfmdb needs toaster to brown your bagel.
+- `toaster` - app needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List you cookbook attributes here.
 
 e.g.
-#### nfmdb::default
+#### app::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['nfmdb']['bacon']</tt></td>
+    <td><tt>['app']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### nfmdb::default
+#### app::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `nfmdb` in your node's `run_list`:
+Just include `app` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[nfmdb]"
+    "recipe[app]"
   ]
 }
 ```

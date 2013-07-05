@@ -1,10 +1,10 @@
-# CHANGELOG for nfmdb
+# CHANGELOG for app
 
-This file is used to list changes made in each version of nfmdb.
+This file is used to list changes made in each version of app.
 
 ## 0.1.0:
 
-* Initial release of nfmdb
+* Initial release of app
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
