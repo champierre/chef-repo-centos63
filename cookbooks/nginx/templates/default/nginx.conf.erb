@@ -11,13 +11,13 @@ http {
   default_type application/octet-stream;
 
   upstream unicorn {
-    server unix:/tmp/unicorn.blog.sock fail_timeout=0;
+    server unix:/tmp/unicorn.<%= node['app']['name'] %>.sock fail_timeout=0;
   }
 
   server {
     listen <%= node['nginx']['port'] %> default deferred;
     #server_name <%= node['nginx']['server_name'] %>;
-    root /vagrant/blog/public;
+    root <%= node['app']['parent_folder'] %>/<%= node['app']['name'] %>/public;
 
     try_files $uri/index.html $uri @unicorn;
     location @unicorn {
