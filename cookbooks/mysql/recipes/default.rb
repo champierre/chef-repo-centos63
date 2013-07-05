@@ -14,10 +14,10 @@ package_names = [
   'MySQL-shared-compat'
 ]
 
-remote_uri = "http://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-5.6/"
+remote_uri = "http://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-5.5/"
 
 package_names.each do |package_name|
-  rpm_file = "#{package_name}-5.6.10-1.el6.x86_64.rpm"
+  rpm_file = "#{package_name}-5.5.32-1.el6.x86_64.rpm"
 
   remote_file "/tmp/#{rpm_file}" do
     source "#{remote_uri}#{rpm_file}"
