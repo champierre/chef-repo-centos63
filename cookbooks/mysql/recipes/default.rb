@@ -11,7 +11,8 @@ package_names = [
   'MySQL-server',
   'MySQL-client',
   'MySQL-devel',
-  'MySQL-shared-compat'
+  'MySQL-shared-compat',
+  'MySQL-shared'
 ]
 
 remote_uri = "http://ftp.jaist.ac.jp/pub/mysql/Downloads/MySQL-5.6/"
